@@ -1,2 +1,3 @@
-# PykaDex_WTP
-Who's That pokemon, clean simple model tester
+# PykaDex_WTP (Who's That pokemon)
+
+PykaDex reposistory for a clean simple model tester
