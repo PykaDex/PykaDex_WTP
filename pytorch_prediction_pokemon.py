@@ -7,8 +7,8 @@ import torch
 import torchvision
 import torch.nn as nn
 import torch.nn.functional as nnf
-
-import pytorch_cnn_model as pcm 
+from pathlib import *
+#import pytorch_cnn_model as pcm 
 
 
 def make_list(data_dir, dirs_to_ignore):
@@ -60,9 +60,9 @@ def image_predictor(net,image_path, IMG_SIZE):
 
 #####################################################################
 
-data_dir = "../PykaDex_Data/Data/Images/GenX"
+data_dir = PurePath("../PykaDex_Data/Data/Images/GenX")
 model_path = "../PykaDex_Trainer/Trained_models/model_trial_pokemon_3_2.pth"
-image_path = "../PykaDex_Data/Data/Test_Images/s.png"
+image_path = "../PykaDex_Data/Data/Test_Images/test.png"
 dirs_to_ignore = ['backgrounds','README.md', ".DS_Store", "._.DS_Store"]
 IMG_SIZE = 80
 
